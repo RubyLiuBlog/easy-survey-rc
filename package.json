@@ -1,18 +1,29 @@
 {
   "name": "easy-survey-rc",
+  "description": "Less is more.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/bundle.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/preset-typescript": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "autoprefixer": "^10.4.2",
+    "classnames": "^2.3.1",
+    "postcss": "^8.4.7",
     "rollup": "^2.69.0",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-sass": "^1.2.10",
+    "tslib": "^2.3.1",
     "typescript": "^4.6.2"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.17",
     "@types/react": "^17.0.39"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   }
 }
